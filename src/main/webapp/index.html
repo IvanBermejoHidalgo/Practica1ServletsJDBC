@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+	<title>Gestión de estudiantes</title>
+</head>
+<body>
+	<h1 style='text-align:center;'>Gestión de estudiantes</h1>
+	
+	<form method="get" action="controlador?operacion=consulta" name="datos">
+		<input type="hidden" name="operacion" value="consulta">
+		<input name="sentencia" required="required"><br>
+		<button type="submit">Ejecutar</button>
+	</form>
+	<br>
+	<form method="post" action="controlador?operacion=alta" name="datos">
+		<input type="hidden" name="operacion" value="alta">
+		ID alumno<input name="sentenciaId" required="required">
+		Curso<input name="sentenciaCurso" required="required">
+		Nombre<input name="sentenciaNombre" required="required"><br>
+		<button>Alta</button>
+	</form>
+	
+	
+	<!--  <a href="hello?nombre=Luis">Realizar encuesta</a-->
+</body>
+</html>
